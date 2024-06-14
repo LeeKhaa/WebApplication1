@@ -26,23 +26,28 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-        public ActionResult GetEmpName(int EmpId)
+        //public ActionResult GetEmpName(int EmpId)
+        //{
+        //    var employees = new[]
+        //    {
+        //        new { EmpId = 1, EmpName = "Kha", Salary = 9000},
+        //        new { EmpId = 2, EmpName = "Thanh", Salary = 7000},
+        //        new { EmpId = 3, EmpName = "Hao", Salary = 8000},
+        //    };
+        //    string matchEmpName = null;
+        //    foreach (var item in employees)
+        //    {
+        //        if (item.EmpId == EmpId)
+        //        {
+        //            matchEmpName = item.EmpName;
+        //        }
+        //    }
+        //    return Content(matchEmpName, "text/plain");
+        //}
+
+        public IActionResult About()
         {
-            var employees = new[]
-            {
-                new { EmpId = 1, EmpName = "Kha", Salary = 9000},
-                new { EmpId = 2, EmpName = "Thanh", Salary = 7000},
-                new { EmpId = 3, EmpName = "Hao", Salary = 8000},
-            };
-            string matchEmpName = null;
-            foreach (var item in employees)
-            {
-                if (item.EmpId == EmpId)
-                {
-                    matchEmpName = item.EmpName;
-                }
-            }
-            return Content(matchEmpName, "text/plain");
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
