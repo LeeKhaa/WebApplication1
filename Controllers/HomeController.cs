@@ -78,6 +78,8 @@ namespace WebApplication1.Controllers
             ViewBag.Name = "Kha";
             ViewBag.Salary = 1000;
             ViewBag.Gender = "M";
+            ViewBag.Year = 2021;
+            ViewBag.Positions = new List<string>() { "Intern", "Fresher", "Middle"}; 
 
             return View();
         }
